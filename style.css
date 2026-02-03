@@ -1,0 +1,62 @@
+* {
+    border: 0;
+    margin: 0;
+
+}
+
+#survey {
+    margin-left: 35%;
+}
+
+#survey div {
+    margin-top: 55px;
+}
+
+
+.input,
+.select {
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px rgb(85, 85, 85);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 105, 203);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(63, 63, 194);
+}
+
+body {
+    background: linear-gradient(white, rgb(77, 177, 162));
+    background-repeat: no-repeat;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+.input-radio{
+    width: 20px;
+    height: 20px;
+}
+li{
+    list-style: none;
+    margin-left: -40px;
+}
+.text-mention{
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1.5px solid black ;
+}
+.button-submit{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: #00ffe1;
+    border: 1.5px solid black;
+    font-size: 30px;
+}

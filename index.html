@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Survey form
+    </h1>
+    <h2>
+        Please fill out the survey form below
+    </h2>
+    <form id="survey">
+        <div>
+            <label for="name" class="name-label">name:</label> <br>
+            <input type="text" name="name" required placeholder="Full name" class="input">
+        </div>
+        <div>
+            <label for="email" class="email-label">email:</label> <br>
+            <input type="email" name="email" required placeholder="Your email" class="input">
+        </div>
+        <div>
+            <label for="age" class="age-label">age:</label> <br>
+            <input type="number" min="0" max="90" required placeholder="Your age here" class="input">
+        </div>
+        <div>
+            <label for="dropdown">Which one of these best describes your occupation?</label> <br>
+            <select name="career" id="dropdown" class="select">
+                <option value="full-time job">full-time job</option>
+                <option value="part-time job">part-time job</option>
+                <option value="freelancer">freelancer</option>
+                <option value="teacher">teacher</option>
+                <option value="student">student</option>
+                <option value="no say">prefer not to say</option>
+            </select>
+        </div>
+        <div>
+            <label for="jijiji">How likely are you to enroll with us ?</label> <br>
+            <ul>
+                <li>
+                    <input name="likely" type="radio" class="input-radio" value="1" id="radio-1">
+                    <label for="radio-1">Extremly likely</label>
+                </li>
+                <li>
+                    <input name="likely" type="radio" class="input-radio" value="2" id="radio-2">
+                    <label for="radio-2">Very likely</label>
+                </li>
+                <li>
+                    <input name="likely" type="radio" class="input-radio" value="3" id="radio-3">
+                    <label for="radio-3">Likely</label>
+                </li>
+                <li>
+                    <input name="likely" type="radio" class="input-radio" value="4" id="radio-4">
+                    <label for="radio-4">Unlikely</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <label for="xyz">What courses would you like to enroll in ?</label>
+            <ul>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="app" id="checkbox-1">
+                    <label for="checkbox-1">Android App Development</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="html-css" id="checkbox-2">
+                    <label for="checkbox-2">Web Designing & Development</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="js" id="checkbox-3">
+                    <label for="checkbox-3">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="Python" id="checkbox-4">
+                    <label for="checkbox-4">Advance Python</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="ml" id="checkbox-5">
+                    <label for="checkbox-5">Machine Learning</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="Artificial" id="checkbox-6">
+                    <label for="checkbox-6">Artificial Intelligence</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="input-checkbox" value="Data" id="checkbox-7">
+                    <label for="checkbox-7">Data Visualization</label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <label for="mention">Any other specification you would like to mention :</label> <br>
+            <textarea id="mention" class="text-mention" placeholder="Enter your comment here"></textarea>
+        </div>
+        <button class="button-submit" type="submit">submit</button>
+    </form>
+</body>
+
+</html>
